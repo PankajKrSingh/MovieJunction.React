@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="840" viewBox="0 0 600 840">
+  <defs>
+    <linearGradient id="t2" x1="0" x2="1">
+      <stop offset="0" stop-color="#6610f2" />
+      <stop offset="1" stop-color="#845ef7" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#t2)" rx="8" />
+  <g opacity="0.06" fill="#fff"><rect x="40" y="40" width="520" height="760" rx="40"/></g>
+  <text x="50%" y="50%" fill="#fff" font-size="36" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" alignment-baseline="middle">Trend 2</text>
+</svg>
