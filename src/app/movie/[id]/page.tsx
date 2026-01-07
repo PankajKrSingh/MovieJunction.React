@@ -1,19 +1,23 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/layout.module.css";
+import { useParams } from "next/navigation";
 
 export default function MoviePage(): React.ReactElement {
+  const params = useParams();
+  const id = params?.id as string | undefined;
   const [movie, setMovie] = useState<any | null>(null);
   const [reviews, setReviews] = useState<any[]>([]);
   const [author, setAuthor] = useState('');
   const [rating, setRating] = useState(8);
   const [comment, setComment] = useState('');
-
+  
   useEffect(() => {
     let mounted = true;
-    fetch('/api/featured').then(r=>r.json()).then(d=>{ if(mounted) setMovie(d && d[0]); }).catch(()=>{});
+    if (!id) return () => { mounted = false; };
+    fetch(`/api/movies/${id}`).then(r=>r.json()).then(d=>{ if(mounted) setMovie(d); }).catch(()=>{});
     return ()=> mounted = false;
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     if (!movie) return;

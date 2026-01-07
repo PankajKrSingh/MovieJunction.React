@@ -58,7 +58,7 @@ export default function FeaturedSlider({ interval = 4000 }: { interval?: number 
               </div>
               <p className={styles.desc}>{s.desc}</p>
               <div className={styles.ctas}>
-                <a className={styles.btnPrimary} href="/movie">
+                <a className={styles.btnPrimary} href={`/movie/${s.id}`}>
                   View Details
                 </a>
                 <a className={styles.btnOutline} href="#trending">
