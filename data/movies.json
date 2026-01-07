@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Featured Movie One",
+    "img": "/images/featured-1.svg",
+    "rating": 8.4,
+    "meta": "Action • 2h 10m • 2025",
+    "desc": "An exciting action-packed thriller with stunning visuals.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Featured Movie Two",
+    "img": "/images/featured-2.svg",
+    "rating": 7.9,
+    "meta": "Drama • 1h 50m • 2024",
+    "desc": "A moving drama about family, choices and redemption.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Featured Movie Three",
+    "img": "/images/featured-3.svg",
+    "rating": 8.7,
+    "meta": "Sci-Fi • 2h 30m • 2025",
+    "desc": "A bold sci-fi adventure exploring unknown horizons.",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Featured Movie Four",
+    "img": "/images/featured-4.svg",
+    "rating": 7.5,
+    "meta": "Comedy • 1h 40m • 2023",
+    "desc": "A witty, fast-paced comedy that keeps you laughing.",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Featured Movie Five",
+    "img": "/images/featured-5.svg",
+    "rating": 8.1,
+    "meta": "Thriller • 2h 0m • 2024",
+    "desc": "A tense thriller with twists and strong performances.",
+    "featured": false
+  }
+]

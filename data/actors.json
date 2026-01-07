@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Actor One",
+    "img": "/images/actor-1.svg",
+    "knownFor": "Movie A"
+  },
+  {
+    "id": 2,
+    "name": "Actor Two",
+    "img": "/images/actor-2.svg",
+    "knownFor": "Movie B"
+  },
+  {
+    "id": 3,
+    "name": "Actor Three",
+    "img": "/images/actor-3.svg",
+    "knownFor": "Movie C"
+  },
+  {
+    "id": 4,
+    "name": "Actor 4",
+    "img": "/images/actor-4.svg",
+    "knownFor": ""
+  }
+]

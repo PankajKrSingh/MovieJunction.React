@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "itemType": "movie",
+    "itemId": 1,
+    "author": "User A",
+    "rating": 8,
+    "comment": "Great movie!"
+  },
+  {
+    "id": 2,
+    "itemType": "movie",
+    "itemId": 1,
+    "author": "Test",
+    "rating": 7,
+    "comment": "Enjoyable!"
+  }
+]

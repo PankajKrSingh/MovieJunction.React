@@ -1,21 +1,17 @@
-"use client";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/styles/layout.module.css";
 
-export default function TrendingThisWeek() {
+export default function TrendingThisWeek(): React.ReactElement {
   const [tab, setTab] = useState("movies");
+  const [movies, setMovies] = useState<any[]>([]);
+  const [tv, setTv] = useState<any[]>([]);
 
-  const trendingMovies = [
-    { id: 1, title: "Trending Movie 1", img: "/images/trend-1.svg" },
-    { id: 2, title: "Trending Movie 2", img: "/images/trend-2.svg" },
-  ];
+  useEffect(() => {
+    fetch('/api/movies').then(r=>r.json()).then(d=>setMovies(d || [])).catch(()=>{});
+    fetch('/api/tv').then(r=>r.json()).then(d=>setTv(d || [])).catch(()=>{});
+  }, []);
 
-  const trendingTv = [
-    { id: 1, title: "Trending TV 1", img: "/images/trend-1.svg" },
-    { id: 2, title: "Trending TV 2", img: "/images/trend-2.svg" },
-  ];
-
-  const trendingItems = tab === "movies" ? trendingMovies : trendingTv;
+  const trendingItems = tab === "movies" ? movies : tv;
 
   return (
     <section id="trending" className={styles.section}>
@@ -44,10 +40,10 @@ export default function TrendingThisWeek() {
       <div className={styles.gridCols}>
         {trendingItems.map((item) => (
           <div key={item.id} className={styles.card}>
-            <img src={item.img} alt={item.title} className={styles.cardImg} />
+            <img src={item.img || '/images/trend-1.svg'} alt={item.title} className={styles.cardImg} />
             <div className={styles.cardBody}>
               <h5 className={styles.cardTitle}>{item.title}</h5>
-              <p className={styles.cardText}>Short tagline</p>
+              <p className={styles.cardText}>{item.meta || 'Short tagline'}</p>
             </div>
           </div>
         ))}
