@@ -1,47 +1,47 @@
 [
   {
     "id": 1,
-    "title": "Featured Movie One",
-    "img": "/images/featured-1.svg",
+    "title": "Batman vs Superman",
+    "img": "/images/movies/batman-vs-superman.webp",
     "rating": 8.4,
-    "meta": "Action • 2h 10m • 2025",
-    "desc": "An exciting action-packed thriller with stunning visuals.",
+    "meta": "Super Heroes • 2h 25m • 2016",
+    "desc": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
     "featured": true
   },
   {
     "id": 2,
-    "title": "Featured Movie Two",
-    "img": "/images/featured-2.svg",
-    "rating": 7.9,
-    "meta": "Drama • 1h 50m • 2024",
-    "desc": "A moving drama about family, choices and redemption.",
+    "title": "The Godfather",
+    "img": "/images/movies/the-godfather.webp",
+    "rating": 9.2,
+    "meta": "Gangster • 2h 55m • 1972",
+    "desc": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
     "featured": true
   },
   {
     "id": 3,
-    "title": "Featured Movie Three",
-    "img": "/images/featured-3.svg",
-    "rating": 8.7,
-    "meta": "Sci-Fi • 2h 30m • 2025",
-    "desc": "A bold sci-fi adventure exploring unknown horizons.",
+    "title": "Fight Club",
+    "img": "/images/movies/fight-club.jpg",
+    "rating": 8.8,
+    "meta": "Triller • 2h 19m • 1999",
+    "desc": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
     "featured": true
   },
   {
     "id": 4,
-    "title": "Featured Movie Four",
-    "img": "/images/featured-4.svg",
-    "rating": 7.5,
-    "meta": "Comedy • 1h 40m • 2023",
-    "desc": "A witty, fast-paced comedy that keeps you laughing.",
+    "title": "The Matrix",
+    "img": "/images/movies/the-matrix.jpg",
+    "rating": 8.7,
+    "meta": "Sci-Fi Epic • 2h 16m • 1999",
+    "desc": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
     "featured": false
   },
   {
     "id": 5,
-    "title": "Featured Movie Five",
-    "img": "/images/featured-5.svg",
-    "rating": 8.1,
-    "meta": "Thriller • 2h 0m • 2024",
-    "desc": "A tense thriller with twists and strong performances.",
+    "title": "Spider-Man: Across the Spider-Verse",
+    "img": "/images/movies/spider-man-across-the-spider-verse.jpg",
+    "rating": 8.5,
+    "meta": "Animation | Action • 2h 20m • 2023",
+    "desc": "Traveling across the multiverse, Miles Morales meets a new team of Spider-People, made up of heroes from different dimensions. But when the heroes clash over how to deal with a new threat, Miles finds himself at a crossroads.",
     "featured": false
   }
 ]

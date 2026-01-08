@@ -28,7 +28,7 @@
   left: 28px;
   bottom: 32px;
   max-width: 50%;
-  background: linear-gradient(90deg, rgba(0,0,0,0.36) 0%, rgba(0,0,0,0.18) 35%, rgba(0,0,0,0.06) 65%, rgba(0,0,0,0.00) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.4) 100%);
   padding: 20px 22px;
   border-radius: 12px;
   backdrop-filter: blur(4px);
@@ -41,6 +41,10 @@
   font-size: 1.9rem;
   margin: 0 0 6px 0;
   text-shadow: 0 4px 18px rgba(0,0,0,0.45);
+}
+
+.title:hover {
+  text-decoration: underline;
 }
 
 .metaRow {

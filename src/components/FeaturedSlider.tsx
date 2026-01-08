@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./featuredSlider.module.css";
 
 import type { Movie } from "@/types/models";
+import Link from "next/link";
 
 type Slide = Partial<Movie>;
 
@@ -18,7 +19,7 @@ export default function FeaturedSlider({ interval = 4000 }: { interval?: number 
       .then((data) => {
         if (mounted) setSlides(data || []);
       })
-      .catch(() => {});
+      .catch(() => { });
     return () => {
       mounted = false;
     };
@@ -51,20 +52,16 @@ export default function FeaturedSlider({ interval = 4000 }: { interval?: number 
           <div className={styles.slide} key={(s.id as any) || i}>
             <img src={s.img} alt={s.title} className={styles.image} />
             <div className={styles.caption}>
-              <h2 className={styles.title}>{s.title}</h2>
+              <h2 className={styles.title}>
+                <Link href={`/movies/${s.id}`}>
+                  {s.title}
+                </Link>
+              </h2>
               <div className={styles.metaRow}>
                 <span className={styles.rating}>{s.rating}</span>
                 <small className={styles.metaText}>{s.meta}</small>
               </div>
               <p className={styles.desc}>{s.desc}</p>
-              <div className={styles.ctas}>
-                <a className={styles.btnPrimary} href={`/movie/${s.id}`}>
-                  View Details
-                </a>
-                <a className={styles.btnOutline} href="#trending">
-                  Trending
-                </a>
-              </div>
             </div>
           </div>
         ))}

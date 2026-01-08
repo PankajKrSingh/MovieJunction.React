@@ -7,17 +7,17 @@ export default function Navbar(): React.ReactElement {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link href="/" className={styles.brand}>
-          MovieJunction
+          Movie Junction
         </Link>
         <div className={styles.navlinks}>
           <Link href="/" className={styles.navlink}>
             Home
           </Link>
-          <Link href="/trending-movies" className={styles.navlink}>
-            Trending Movies
+          <Link href="/movies" className={styles.navlink}>
+            Movies
           </Link>
-          <Link href="/trending-tv" className={styles.navlink}>
-            Trending TV
+          <Link href="/tv" className={styles.navlink}>
+            TV Series
           </Link>
           <Link href="/actor" className={styles.navlink}>
             Actors
